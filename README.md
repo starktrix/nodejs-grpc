@@ -1,3 +1,3 @@
-https://daily.dev/blog/build-a-grpc-service-in-nodejs
-https://blog.logrocket.com/creating-a-crud-api-with-node-express-and-grpc/
-https://grpc.io/docs/languages/
+## NodeJs gRPC
+
+A simple walkthrough demo of how it operates using JavaScript and the NodeJs engine

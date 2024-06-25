@@ -1,3 +1,10 @@
+https://daily.dev/blog/build-a-grpc-service-in-nodejs
+
+https://blog.logrocket.com/creating-a-crud-api-with-node-express-and-grpc/
+
+https://grpc.io/docs/languages/
+
+
 https://www.phind.com/search?cache=zkak2i9q9polcxqtz320ieki
 
 1. The bind Port is not binding to port 50051, I had to change this to 50052. I think this has to be that it is initaited on 50051 by default.
