@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+service StreamService {
+    rpc ClientStream (stream StreamValue) returns (ClientStreamEnd) {}
+    rpc ServerStream (ServerStreamStart) returns (stream StreamValue) {}
+    rpc BiStream (stream StreamValue) returns (stream StreamValue) {}
+}
+
+
+message StreamValue {
+    int32 id = 1;
+    string data = 2;
+    string src = 3;
+    string dst = 4;
+}
+
+message ClientStreamStart {
+    string clientstart = 1;
+}
+
+message ServerStreamStart {
+    string serverstart = 1;
+}
+
+message ClientStreamEnd {
+    string clientend= 1;
+}
+
+message ServerStreamEnd {
+    string serverend= 1;
+}
