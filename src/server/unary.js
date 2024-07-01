@@ -22,7 +22,8 @@ const options = {
 }
 
 const packageDefintion = loadSync(TODO_PROTOC, options)
-const todoProto = grpc.loadPackageDefinition(packageDefintion)
+// add .proto so it can work with golang client
+const todoProto = grpc.loadPackageDefinition(packageDefintion).proto
 
 const server = new grpc.Server()
 

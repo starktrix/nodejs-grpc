@@ -23,7 +23,7 @@ const options = {
 };
 
 const packageDefintion = loadSync(STREAM_PROTOC, options);
-const streamProto = grpc.loadPackageDefinition(packageDefintion);
+const streamProto = grpc.loadPackageDefinition(packageDefintion).proto;
 
 const server = new grpc.Server();
 

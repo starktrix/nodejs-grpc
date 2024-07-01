@@ -20,9 +20,12 @@ const options = {
 };
 
 const packageDefintion = loadSync(TODO_PROTOC, options);
-const TodoService = grpc.loadPackageDefinition(packageDefintion).TodoService;
+// const TodoService = grpc.loadPackageDefinition(packageDefintion).TodoService;
 
-const client = new TodoService(
+// cross platform call to golang server
+const srv = grpc.loadPackageDefinition(packageDefintion).proto;
+
+const client = new srv.TodoService(
   "localhost:50052",
   grpc.credentials.createInsecure()
 );
