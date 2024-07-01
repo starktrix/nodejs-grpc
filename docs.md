@@ -47,3 +47,9 @@ if the server close its stream, client can not write to it
 solved by putting the end in each other respectively but the client does not end as done in other streams
 
 the tricky thing is server has to be the one to close last
+
+
+cross platform class from node client to golang server
+edited the node clinet to include `package proto` which was contained in here
+```
+https://www.phind.com/search?cache=jgei95zcty0b7uqm49ik3yaf
